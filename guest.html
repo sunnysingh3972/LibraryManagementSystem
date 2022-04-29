@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <title>Library Mananagement System</title>
+    <link rel="stylesheet" href="library.css">
+
+
+</head>
+
+<body>
+    <div class="topnav" id="topnav">
+        <a href=index.html >Home</a>
+        
+        
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    <h1 align="center">Welcome to Chandigarh University Library </h1>
+    <h2 align="center">A room without books is like a body without a soul</h2>
+	</div><br>
+
+
+    <form action ="library.php" name="myForm" onsubmit=" return validateForm()" method="post">
+        <div class="form" id="name">
+            Student Name: <input type="text" name="sname" required><span class="formerror"> </span></b>
+        </div>
+        
+        <div class="form" id="u_id">
+            University ID: <input type="text" name="u_id" required><span class="formerror"> </span></b>
+        </div>
+
+        <div class="form" id="email">
+            Student Email: <input type="email" name="semail" required>
+        </div>
+
+        <div class="form" id="phone">
+            Phone number: <input type="phone" name="sphone" required><span class="formerror"> </span></b>
+        </div>
+
+        <div class="form" id="phone">
+           Alternative Phone number: <input type="phone" name="aphone" ><span class="formerror"> </span></b>
+        </div>
+
+	
+
+    <div class="form_footer" id="submit">    
+        <input class="view" name="view " type="submit" value="View">
+    </div>
+
+        <script src="library.js"></script>
+
+    </form>
+</body>
+
+</html>

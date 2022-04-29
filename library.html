@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <title>Library Mananagement System</title>
+    <link rel="stylesheet" href="library.css">
+
+
+</head>
+
+<body>
+    <div class="finetable" id="table">
+    <h1 align="center">Welcome to Chandigarh University Library </h1>
+    <h2 align="center">A room without books is like a body without a soul</h2>
+
+    <h3>NOTE:- <br> 1. For adding a book record for student click submit <br> 2. For deleting a book record for student click delete</h3>
+
+    <h2 > Late fine table </h2> 
+    	<table>
+  	<tr>
+    	<th>DURATION</th>
+    	<th>FINE</th>
+  	</tr>
+  	<tr>
+    	<td>Within one month</td>
+    	<td>10/- per day</td>
+  	</tr>           
+  	<tr>              
+    	<td>After one month</td>
+    	<td>20/- per day</td>
+  	</tr>
+	</table>
+	</div><br>
+
+
+    <form action ="library.php" name="myForm" onsubmit=" return validateForm()" method="post">
+        <div class="form" id="name">
+            Student Name: <input type="text" name="sname" required><span class="formerror"> </span></b>
+        </div>
+        
+        <div class="form" id="u_id">
+            University ID: <input type="text" name="u_id" required><span class="formerror"> </span></b>
+        </div>
+
+        <div class="form" id="email">
+            Student Email: <input type="email" name="semail" required>
+        </div>
+
+        <div class="form" id="phone">
+            Phone number: <input type="phone" name="sphone" required><span class="formerror"> </span></b>
+        </div>
+
+        <div class="form" id="phone">
+           Alternative Phone number: <input type="phone" name="aphone" ><span class="formerror"> </span></b>
+        </div>
+
+	<div class="form" id="book_id">
+            Book id<input type="text" name="book_id" >
+        </div>
+
+	<div class="form" id="book_name">
+            Book name: <input type="text" name="book_name" >
+        </div>
+
+	<div class="form" id="date">
+           Issue date <input type="date" name="date" >
+        </div>
+
+	<h2> Late Fine </h2>
+
+	<div class="fine" id="Yes">
+           Yes<input type="radio" name="fine" value="Yes" >
+        </div>
+        
+        <div class="fine" id="No">
+           No <input type="radio" name="fine" value="No" >
+        </div>
+
+    <div class = "form_footer" id="delete">
+        <input class="delete" name="delete" type="submit" value="DELETE">
+    </div>
+    
+    
+    <div class="form_footer" id="submit">    
+        <input class="submit" name="submit" type="submit" value="SUBMIT">
+    </div>
+
+    <div class="form_footer" id="submit">    
+        <input class="view" name="view " type="submit" value="View">
+    </div>
+
+        <script src="library.js"></script>
+
+    </form>
+</body>
+
+</html>
